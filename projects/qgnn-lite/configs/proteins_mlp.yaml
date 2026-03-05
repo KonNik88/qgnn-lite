@@ -1,0 +1,24 @@
+run:
+  seed: 42
+  epochs: 3
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.0
+  split:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  num_workers: 0
+
+data:
+  dataset_name: PROTEINS
+  root_dir: data/TUDataset
+
+model:
+  backbone: gcn
+  hidden_dim: 64
+  head: mlp
+
+devices:
+  gnn: cuda
+  vqc: cpu

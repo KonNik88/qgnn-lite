@@ -1,0 +1,27 @@
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+
+# Deep learning
+torch
+torchvision
+torchaudio
+
+# Graph ML
+torch-geometric
+
+# Quantum ML
+pennylane
+pennylane-lightning
+
+# Config
+pyyaml
+
+# Utilities
+tqdm
+scikit-learn
+
+# Notebook
+jupyter

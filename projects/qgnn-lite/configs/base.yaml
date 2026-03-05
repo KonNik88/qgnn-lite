@@ -1,0 +1,31 @@
+# projects/qgnn-lite/configs/base.yaml
+
+run:
+  seed: 42
+  epochs: 3
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.0
+  split:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  num_workers: 0
+
+data:
+  dataset_name: MUTAG
+  root_dir: data/TUDataset  
+
+model:
+  backbone: gcn
+  hidden_dim: 64
+  head: vqc # mlp | vqc
+
+vqc:
+  n_qubits: 4
+  n_layers: 1
+  shots: null  
+
+devices:
+  gnn: cpu # cuda | cpu
+  vqc: cpu    
