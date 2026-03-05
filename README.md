@@ -64,6 +64,20 @@ Models compared:
 | PROTEINS | GCN + MLP | ~0.67 | ~1 s |
 | PROTEINS | GCN + VQC | ~0.65 | ~48 s |
 
+---
+
+## Results Visualization
+
+### Accuracy Comparison
+
+![Accuracy](projects/qgnn-lite/artifacts/figures/accuracy_comparison.png)
+
+### Runtime Comparison
+
+![Runtime](projects/qgnn-lite/artifacts/figures/runtime_comparison.png)
+
+---
+
 ### Observations
 
 - Classical MLP performs slightly better on MUTAG.
