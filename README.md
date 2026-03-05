@@ -21,9 +21,20 @@ The goal is to understand the **practical trade-offs between classical and quant
 
 The architecture tested in this project:
 
-Graph → GCN → Graph embedding → Classification head
-                                ↳ MLP
-                                ↳ VQC
+```
+Graph
+│
+▼
+GCN Backbone
+│
+▼
+Graph Embedding
+│
+▼
+Classification Head
+├── MLP (classical baseline)
+└── VQC (variational quantum circuit)
+```
 
 The backbone extracts graph features, while the prediction head performs final classification.
 
@@ -88,6 +99,7 @@ Models compared:
 
 ## Repository Structure
 
+```
 QNN/
 ├── data/                     # datasets (ignored in git)
 ├── docs/                     # project notes
@@ -102,6 +114,7 @@ QNN/
 ├── run_seeds.ps1             # experiment runner
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
