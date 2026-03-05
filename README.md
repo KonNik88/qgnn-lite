@@ -21,9 +21,9 @@ The goal is to understand the **practical trade-offs between classical and quant
 
 The architecture tested in this project:
 
-Graph → GCN Backbone → Graph Embedding → Prediction Head  
-&nbsp;&nbsp;&nbsp;&nbsp;├── MLP (classical)  
-&nbsp;&nbsp;&nbsp;&nbsp;└── VQC (quantum)
+Graph → GCN → Graph embedding → Classification head
+                                ↳ MLP
+                                ↳ VQC
 
 The backbone extracts graph features, while the prediction head performs final classification.
 
